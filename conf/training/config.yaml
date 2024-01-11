@@ -1,0 +1,27 @@
+# Конфигурационный файл для процесса обучения
+
+# размер тестовой выборки в %
+test_size: 0.33
+
+# Нормализуем или нет вещественные переменные
+normalize_num_features: True
+
+# Параметры модели, которые не меняем
+model_params:
+    'num_boost_round': 3000
+    'early_stopping_rounds': 100
+    'verbose_eval': 1000
+
+# Параметры модели (оптимизированные HyperOpt)
+optim_params:
+    'eta': 0.03942389417714505
+    'max_depth': 1
+    'n_estimators': 1104
+    'subsample': 0.4258489088180469
+    'eval_metric': 'auc'
+    'objective': 'binary:logistic' # output probability
+
+
+# Параметры для раскраски графа
+# Кол-во запусков для усреднения
+nruns: 100

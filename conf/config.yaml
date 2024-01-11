@@ -1,0 +1,21 @@
+# Основной конфигурационный файл
+
+random_state: 17
+
+# Путь сохранения результатов начального причинного графа, без весов
+save_fpath: '../results/causal_graph_init.png'
+
+# Disable change directly and create output directories
+hydra:
+  job:
+    chdir: False
+  run:
+    dir: .
+
+# Путь сохранения результатов взвешенного причинного графа
+result_fpath: '../results/causal_graph_result.png'
+# подключаем остальные файлы
+defaults:
+  - data: config
+  - training: config
+  - _self_

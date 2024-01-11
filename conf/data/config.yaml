@@ -1,0 +1,16 @@
+# Конфигурационный файл для данных
+frc_fpath: '../data/data_frc.csv'
+nrm_fpath: '../data/data_nrm.csv'
+
+# Substitute with your own
+data_fpath: ${.frc_fpath}
+separator: ';'
+
+# Конечная точка
+target: 'DIAG'
+
+# Number of splits for building synolytic graph
+n_splits: 10
+
+# results
+results_fpath: '../results/result_graph.csv'
