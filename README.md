@@ -1,1 +1,1 @@
-Script creating synolytic graph from table dataset
+Script for creating synolytic graph from table dataset
